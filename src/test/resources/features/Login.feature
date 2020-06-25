@@ -2,6 +2,7 @@
 Feature: Login
   #As a user, I should be able to login
 
+  @ignore
   Scenario: Login as POS manager
     Given I am on the login page
     When I login as a POS manager

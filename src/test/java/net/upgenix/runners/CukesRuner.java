@@ -11,7 +11,8 @@ import org.junit.runner.RunWith;
         glue = "net/upgenix/step_definitions",
         strict = true,
         dryRun = false,
-        tags = "@smoke"
+        tags = "@wip"
 )
+
 public class CukesRuner {
 }

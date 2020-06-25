@@ -22,6 +22,7 @@ public class LoginStepDefs {
             url = ConfigurationReader.getProperty("url");
         }
         Driver.getDriver().get(url);
+        Driver.getDriver().manage().window().maximize();
     }
 
     @When("I login as a POS manager")
@@ -33,6 +34,7 @@ public class LoginStepDefs {
 
     @Then("Page title should contain {string}")
     public void page_title_should_contain(String expectedTitle) throws InterruptedException {
+        Thread.sleep(2000);
         String actualTitle = Driver.getDriver().getTitle();
         Assert.assertTrue(actualTitle.contains(expectedTitle));
     }
