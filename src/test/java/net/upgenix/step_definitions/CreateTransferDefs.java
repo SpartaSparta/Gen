@@ -86,15 +86,6 @@ public class CreateTransferDefs extends BasePage {
 
         transfersPage.save_transfer_btn.click();
 
-
-
-
-
-
-
-
-
-
     }
 
 
